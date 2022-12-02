@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+    </main>
+
+    <script>
+
+      var canvas;
+
+      function setup() {
+        // put drawing code here
+        canvas = createCanvas(windowWidth, windowHeight);
+        background(random(255), random(255), random(255), 50);
+      }
+
+      function draw() {
+        // put drawing code here
+        frameRate(2)
+        noStroke();
+        fill(random(255), random(255), random(255), 70);
+        ellipse(random(windowWidth), random(windowHeight), random(10, 300), random(10, 300));
+      }
+
+    </script>
+
+  </body>
+</html>

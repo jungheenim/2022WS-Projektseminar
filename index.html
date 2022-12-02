@@ -6,10 +6,11 @@
 -->
 <html>
 	<head>
-		<title>Editorial by HTML5 UP</title>
+		<title>2022 WS Projektseminar. Generative Kunst.</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+
 	</head>
 	<body class="is-preload">
 
@@ -49,12 +50,20 @@ Generative Kunst dient Künstlern oft als Mittel, Intentionalität zu vermeiden.
 											<li><a href="#" class="button big">Learn More</a></li>
 										</ul>
 									</div>
-									<span class="image object">
+
+									<!--<span class="image object">
 										<img src="images\Jecho_Autumn_Nocturno.jpg" alt="" />
-									</span>
+									</span>-->
 								</section>
 
+							<!--file upload-->
+							<form class="" action="index.html" method="post" enctype="multipart/form-data">
+								<input type="file" name="profile">
+								<input type="submit">
+							</form>
+
 							<!-- Section -->
+							<!--
 								<section>
 									<header class="major">
 										<h2>Erat lacinia</h2>
@@ -90,8 +99,10 @@ Generative Kunst dient Künstlern oft als Mittel, Intentionalität zu vermeiden.
 										</article>
 									</div>
 								</section>
+							-->
 
 							<!-- Section -->
+							<!--
 								<section>
 									<header class="major">
 										<h2>Ipsum sed dolor</h2>
@@ -147,6 +158,7 @@ Generative Kunst dient Künstlern oft als Mittel, Intentionalität zu vermeiden.
 										</article>
 									</div>
 								</section>
+							-->
 
 						</div>
 					</div>
@@ -169,21 +181,29 @@ Generative Kunst dient Künstlern oft als Mittel, Intentionalität zu vermeiden.
 									</header>
 									<ul>
 										<li><a href="index.html">Homepage</a></li>
-										<li><a href="generic.html">Geschichte</a></li>
+										<li>
+											<span class="opener">Generative Kunst</span>
+												<ul>
+													<li> <a href="generativekunst.html">Generative Kunst mit p5.js</a></li>
+													<li><a href="p5.html">p5.js</a></li>
+												</ul>
+										</li>
+
 										<li>
 											<span class="opener">Beispiele</span>
 											<ul>
-												<li><a href="#">Lorem Dolor</a></li>
-												<li><a href="#">Ipsum Adipiscing</a></li>
-												<li><a href="#">Tempus Magna</a></li>
-												<li><a href="#">Feugiat Veroeros</a></li>
+												<li><a href="#">Perlin Noise</a></li>
 											</ul>
 										</li>
 										<li>
 											<span class="opener">Experimente</span>
 											<ul>
-												<li><a href="beispiele\sketch.html" target="_blank">Sketch</a></li>
-												<li><a href="beispiele\fractal.html" target="_blank">Fractal (Kopie von p5js.org)</a></li>
+												<li><a href="experiment\sketch.html" target="_blank">Sketch</a></li>
+												<li><a href="experiment\fractal.html" target="_blank">Fractal (Kopie von p5js.org)</a></li>
+												<li><a href="experiment\randomgrid.html" target="_blank">Random Grid</a></li>
+												<li><a href="experiment\friedernake.html" target="_blank">Frieder Nake</a></li>
+												<li><a href="experiment\georgnees.html" target="_blank">Georg Nees</a></li>
+
 											</ul>
 										</li>
 									</ul>
@@ -237,12 +257,17 @@ Generative Kunst dient Künstlern oft als Mittel, Intentionalität zu vermeiden.
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<!-- Scripts -->
+				<script src="assets/js/jquery.min.js"></script>
+				<script src="assets/js/browser.min.js"></script>
+				<script src="assets/js/breakpoints.min.js"></script>
+				<script src="assets/js/util.js"></script>
+				<script src="assets/js/main.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+				<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+				<script src="assets/js/p5.js"></script>
+				<script src="assets/js/p5.min.js"></script>
+				<script src="assets/js/background.js"></script>
 
 	</body>
 </html>
