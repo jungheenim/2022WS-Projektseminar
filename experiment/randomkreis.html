@@ -18,20 +18,15 @@
       function setup() {
         // put drawing code here
         canvas = createCanvas(windowWidth, windowHeight);
-        background(255);
+        background(random(255), random(255), random(255), 50);
       }
 
       function draw() {
         // put drawing code here
-        stroke(255);
-        strokeWeight(1);
-        fill(0);
-        if (mouseIsPressed === true) {
-          stroke(0);
-          line(mouseX, mouseY, pmouseX, pmouseY);
-        } else {
-          stroke(255);
-        }
+        frameRate(2)
+        noStroke();
+        fill(random(255), random(255), random(255), 70);
+        ellipse(random(windowWidth), random(windowHeight), random(10, 300), random(10, 300));
       }
 
     </script>

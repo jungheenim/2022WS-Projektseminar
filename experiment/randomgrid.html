@@ -27,15 +27,18 @@
       }
 
       function draw() {
-        frameRate(1);
+        frameRate(2);
 
         xposition = random(windowWidth - lineweight);
         yposition = random(windowHeight - lineweight);
         stroke(0);
         strokeWeight(lineweight);
-        line(xposition, 0, xposition, windowHeight);
-        line(0, yposition, windowWidth, yposition);
-
+        let n = random(0, 1);
+        if (n < 0.5) {
+          line(xposition, 0, xposition, windowHeight);
+        } else {
+          line(0, yposition, windowWidth, yposition);
+        }
       }
 
     </script>
