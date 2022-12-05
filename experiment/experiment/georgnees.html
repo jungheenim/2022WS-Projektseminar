@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.5.0/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+
+  </head>
+  <body>
+    <main>
+    </main>
+
+    <script>
+
+    var rows = 24;
+    var cols = 12;
+    var rectsize = 30;
+
+    function setup() {
+      createCanvas(windowWidth, windowHeight);
+      background(255);
+      noFill();
+      strokeWeight(1);
+      rectMode(CENTER);
+
+      for (var r = 0; r <= rows; r++) {
+        for (var c = 0; c <= cols; c++) {
+          push();
+          translate(c * rectsize, r * rectsize);
+          rotate(radians(random(-r * 3, r * 3)) / 5);
+          rect(0 + random(-r + rectsize * 2, r + rectsize * 2) / 2, 0 + random(-r + rectsize * 2, r + rectsize * 2) / 2, rectsize, rectsize);
+          pop();
+        }
+      }
+    }
+
+    // var canvas;
+    // var a;
+    // var b;
+    // let squaresize = 50;
+    // let di = 0;
+    // let ro = 0;
+    // let x = 0;
+    // let y = 0;
+    //
+    // function setup() {
+    //   // put drawing code here
+    //   canvas = createCanvas(windowWidth, windowHeight);
+    //   background(random(255), random(255), random(255), 50);
+    //   noLoop();
+    //   angleMode(DEGREES);
+    //   rectMode(CENTER);
+    // }
+    //
+    // function draw() {
+    //   // put drawing code here
+    //   frameRate(1);
+    //   stroke(0);
+    //   strokeWeight(1);
+    //   noFill();
+    //   x = squaresize;
+    //   y = squaresize;
+    //   for (i = 0; i < 15; i++) {
+    //     for (j = 0; j < 10; j++) {
+    //       push();
+    //       a = random(x - di, x + di);
+    //       b = random(y - di, y + di);
+    //       translate(a, b);
+    //       rotate((random(-ro, ro))/8);
+    //       rect(a, b, squaresize, squaresize);
+    //       x += squaresize/2;
+    //       pop();
+    //     }
+    //
+    //     di += 0.1;
+    //     ro += 5;
+    //     x = squaresize;
+    //     y += squaresize/2;
+    //   }
+    // }
+
+
+    </script>
+
+  </body>
+</html>
